@@ -24,6 +24,23 @@ a{
     justify-content: center;
 }
 
+img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+p{
+    color: black;
+    font-size: 1.4em;
+    margin-top: 5px;
+    line-height: 2.5em;
+    font-weight: 500;
+    letter-spacing: .05em;
+}
+
+/* Hello Section */
+
 #hello{
     background-image: url(img/mejbah3.jpg);
     background-size: cover;
@@ -142,19 +159,14 @@ a{
     color: red;
 }
 
-#services .service-top{
-    font-size: 1.4em;
-    margin-top: 5px;
-    line-height: 2.5em;
-    font-weight: 500;
-    letter-spacing: .05em;
-}
+
 
 #services .service-bottom{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 }
 
 #services .service-item{
@@ -170,6 +182,7 @@ a{
     margin: 10px 5%;
     position: relative;
     z-index: 1;
+    overflow: hidden;
 }
 
 #services .service-item::after{
@@ -190,15 +203,20 @@ a{
     margin-bottom: 20px;
 }
 
-#services .service-bottom .icon img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
+#services .service-item h2{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
 }
 
 #services .service-item p{
     color: white;
+    text-align: left;
 }
+
+
 /* Keyfarms */
 @keyframes text_reveal_box{
     50%{
